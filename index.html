@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>To do List</header>
+  <main>
+    <div class="content">
+      <div class="form">
+        <label>
+          <input type='text' name='toDoInput' />
+          <button onClick="addNew()">+</button>
+        </label>
+        <label>
+          <select onchange="filter()" id="select">
+            <option id="nofilter" value="nofilter">Sem Filtro </option>
+            <option id="none" value="none">A Fazer</option>
+            <option id="checked" value="checked">Finalizada</option>
+            <option id="returned" value="returned">Retornada </option>
+          </select>
+        </label>
+      </div>
+      <ul id="ul">
+      </ul>
+  </main>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

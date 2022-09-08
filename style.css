@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 24px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  background-color: #ccc;
+}
+
+div.content {
+  margin: 32px auto;
+  max-width: 1024px;
+}
+
+select {
+  height: 21px;
+  margin-left: 4px;
+}
+
+div.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+  margin: 8px 0 0 0;
+  border: 1px solid black;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4px;
+}
+
+ul li:nth-child(2n-1) {
+  background-color: rgba(0,0,0,0.1);
+}
+
+li span {
+  margin-right: auto;
+}
+
+li.checked span {
+  text-decoration: line-through;
+  color: green;
+}
+
+li.returned span {
+  color: red;
+}
+
+li button + button {
+  margin-left: 4px;
+}
+
+li button {
+  height: 24px;
+  width: 24px;
+}
+
+li.hidden {
+  display: none;
+}
+
+button.check {
+  background-color: green;
+}
+
+button.return {
+  background-color: red;
+}
+
+button.check, button.return {
+  color: #fff;
+}
